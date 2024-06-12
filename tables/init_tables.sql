@@ -1,4 +1,4 @@
-create schema if not exists git_demo;
+create schema if not exists git_demo with managed access;
 
 create table if not exists git_demo.demo_table (
     id int autoincrement,
