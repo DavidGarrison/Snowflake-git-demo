@@ -5,7 +5,7 @@ create role if not exists git_demo_engineer;
 --generally these roles should be granted to a business role or an azure user role
 grant role git_demo_admin to user dgarrison;
 grant role git_demo_analyst to user dgarrison;
-grant role git_demo_analyst to user dgarrison;
+grant role git_demo_engineer to user dgarrison;
 
 --give access to database
 grant usage on database sandbox_db to role git_demo_admin;
