@@ -1,6 +1,6 @@
-create role git_demo_admin;
-create role git_demo_analyst;
-create role git_demo_engineer;
+create role if not exists git_demo_admin;
+create role if not exists git_demo_analyst;
+create role if not exists git_demo_engineer;
 
 grant usage on database sandbox_db to role git_demo_admin;
 grant usage on database sandbox_db to role git_demo_analyst;
