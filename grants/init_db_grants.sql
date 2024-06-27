@@ -2,6 +2,9 @@ create role if not exists git_demo_admin;
 create role if not exists git_demo_analyst;
 create role if not exists git_demo_engineer;
 
+grant role git_demo_analyst to role git_demo_engineer;
+grant role git_demo_engineer to role git_demo_admin;
+
 --generally these roles should be granted to a business role or an azure user role
 grant role git_demo_admin to user dgarrison;
 grant role git_demo_analyst to user dgarrison;
